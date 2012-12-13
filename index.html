@@ -29,10 +29,20 @@
         <hr>
 
         <section id="main_content">
-          <h3>Welcome to GitHub Pages.</h3>
+        Adjusting Heroku Timezone
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+Adjusting Heroku Timezone
+Changing the timezone on the Heroku Cedar stack can be done in a few easy steps.
+Grab your the appropriate zone name string from here
+In your console/shell:
 
+$ heroku config:add TZ=EST
+Application will restart automatically after this action.
+
+To test it out:
+console/shell:
+$ heroku run console
+$ Time.now
     </div>
   </body>
 </html>
