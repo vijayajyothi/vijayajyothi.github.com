@@ -29,20 +29,26 @@
         <hr>
 
         <section id="main_content">
-        Adjusting Heroku Timezone
+    <h3>    Adjusting Heroku Timezone <h3>
 
-Adjusting Heroku Timezone
+<p>
 Changing the timezone on the Heroku Cedar stack can be done in a few easy steps.
-Grab your the appropriate zone name string from here
+Grab your the appropriate zone name string from here </p>
+<br/>
 In your console/shell:
-
+<br/>
 $ heroku config:add TZ=EST
+<br/>
 Application will restart automatically after this action.
-
+<br />
 To test it out:
+<br />
 console/shell:
+<br />
 $ heroku run console
+<br />
 $ Time.now
-    </div>
+<br />
+</div>
   </body>
 </html>
